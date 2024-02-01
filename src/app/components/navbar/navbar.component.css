@@ -8,6 +8,7 @@
 #navbar > :first-child {
 	font-family: "Playfair Display";
 	font-size: 25px;
+	font-weight: bold;
 }
 
 #navLinksLeft {
@@ -23,7 +24,7 @@
 	flex-grow: 0.6;
 }
 
-.navLinks h1 {
+.navLinks a {
 	font-size: 20px;
 	font-weight: normal;
 	margin-top: auto;
@@ -58,4 +59,26 @@
 	background-color: #dfe2e0;
 	border: 2px #dfe2e0 solid;
 	font-weight: 570;
+}
+
+@media (min-width: 640px) {
+	.navLinks {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.navLinks {
+		display: flex;
+	}
+	.authContainer {
+		display: none;
+	}
+}
+@media (min-width: 1024px) {
+	#navbarHamburger {
+		display: none;
+	}
+	.authContainer {
+		display: flex;
+	}
 }

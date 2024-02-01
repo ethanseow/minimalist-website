@@ -8,16 +8,8 @@ import { Component } from '@angular/core';
 	styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-	hamburgerClass = {
-		opened: 'hamburger hamburger--slider is-active',
-		closed: 'hamburger hamburger--slider',
-	};
-	currentHamburgerClass = this.hamburgerClass.closed;
+	isHamburgerOpened = '';
 	toggleHamburger() {
-		console.log('toggling');
-		this.currentHamburgerClass =
-			this.currentHamburgerClass == this.hamburgerClass.closed
-				? this.hamburgerClass.opened
-				: this.hamburgerClass.closed;
+		this.isHamburgerOpened = this.isHamburgerOpened == '' ? 'is-active' : '';
 	}
 }

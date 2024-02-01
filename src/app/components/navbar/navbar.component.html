@@ -1,12 +1,12 @@
 <div id="navbar">
-	<h1>Minimal</h1>
+	<a>Minimal</a>
 	<div id="navLinksLeft"></div>
 	<div class="navLinks textBaseline">
-		<h1>Home</h1>
-		<h1>Gallery</h1>
-		<h1>Features</h1>
-		<h1>About</h1>
-		<h1>Contact</h1>
+		<a><p>Home</p></a>
+		<a><p>Gallery</p></a>
+		<a><p>Features</p></a>
+		<a><p>About</p></a>
+		<a><p>Contact</p></a>
 	</div>
 	<div id="navLinksRight"></div>
 	<div class="authContainer">
@@ -14,7 +14,9 @@
 		<button class="authButtons" id="signUpButton">Sign Up</button>
 	</div>
 	<button
-		[class]="currentHamburgerClass"
+		id="navbarHamburger"
+		class="hamburger hamburger--slider"
+		[class]="isHamburgerOpened"
 		type="button"
 		(click)="toggleHamburger()"
 	>
