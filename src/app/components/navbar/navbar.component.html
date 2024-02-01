@@ -1,0 +1,25 @@
+<div id="navbar">
+	<h1>Minimal</h1>
+	<div id="navLinksLeft"></div>
+	<div class="navLinks textBaseline">
+		<h1>Home</h1>
+		<h1>Gallery</h1>
+		<h1>Features</h1>
+		<h1>About</h1>
+		<h1>Contact</h1>
+	</div>
+	<div id="navLinksRight"></div>
+	<div class="authContainer">
+		<button class="authButtons" id="loginButton">Login</button>
+		<button class="authButtons" id="signUpButton">Sign Up</button>
+	</div>
+	<button
+		[class]="currentHamburgerClass"
+		type="button"
+		(click)="toggleHamburger()"
+	>
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+</div>

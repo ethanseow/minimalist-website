@@ -1,0 +1,61 @@
+#navbar {
+	display: flex;
+	align-items: baseline;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navbar > :first-child {
+	font-family: "Playfair Display";
+	font-size: 25px;
+}
+
+#navLinksLeft {
+	flex-grow: 0.4;
+}
+
+.navLinks {
+	display: flex;
+	gap: 30px;
+}
+
+#navLinksRight {
+	flex-grow: 0.6;
+}
+
+.navLinks h1 {
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.navLinks > :first-child {
+	font-weight: bold;
+}
+
+.authContainer {
+	display: flex;
+	gap: 10px;
+}
+
+.authButtons {
+	border-radius: 40px; /* Adjust the border-radius value for more or less rounding */
+	font-size: 20px;
+	color: #5c645f;
+	height: 50px;
+	width: 120px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#loginButton {
+	background-color: transparent;
+	border: 2px #aab1ac solid;
+}
+
+#signUpButton {
+	background-color: #dfe2e0;
+	border: 2px #dfe2e0 solid;
+	font-weight: 570;
+}
