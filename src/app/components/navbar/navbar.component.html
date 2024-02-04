@@ -2,26 +2,31 @@
 	<a>Minimal</a>
 	<div id="navLinksLeft"></div>
 	<div class="navLinks textBaseline">
-		<a><p>Home</p></a>
-		<a><p>Gallery</p></a>
-		<a><p>Features</p></a>
-		<a><p>About</p></a>
-		<a><p>Contact</p></a>
+		<a>Home</a>
+		<a>Gallery</a>
+		<a>Features</a>
+		<a>About</a>
+		<a>Contact</a>
 	</div>
 	<div id="navLinksRight"></div>
 	<div class="authContainer">
-		<button class="authButtons" id="loginButton">Login</button>
-		<button class="authButtons" id="signUpButton">Sign Up</button>
+		<button class="authButtons" id="loginButton"><span>Login</span></button>
+		<button class="authButtons" id="signUpButton"><span>Sign Up</span></button>
 	</div>
-	<button
-		id="navbarHamburger"
-		class="hamburger hamburger--slider"
-		[class]="isHamburgerOpened"
-		type="button"
-		(click)="toggleHamburger()"
-	>
-		<span class="hamburger-box">
-			<span class="hamburger-inner"></span>
-		</span>
-	</button>
+	<div id="navbarHamburger">
+		<button
+			class="hamburger hamburger--slider"
+			[class]="isHamburgerOpened"
+			(click)="toggleHamburger()"
+		>
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<ul [class]="isHamburgerOpened">
+			<li><a href="#0">Home</a></li>
+			<li><a href="#0">Gallery</a></li>
+			<li><a href="#0">Feature</a></li>
+		</ul>
+	</div>
 </div>

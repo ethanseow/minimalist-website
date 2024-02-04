@@ -6,7 +6,6 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-	padding: 15px 15px;
 	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, filter;
@@ -18,6 +17,7 @@
 	background-color: transparent;
 	border: 0;
 	margin: 0;
+	width: max-content;
 	overflow: visible;
 }
 .hamburger:hover {

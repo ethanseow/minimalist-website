@@ -1,13 +1,13 @@
 #navbar {
 	display: flex;
 	align-items: baseline;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
 }
 
 #navbar > :first-child {
 	font-family: "Playfair Display";
-	font-size: 25px;
+	font-size: 1.56rem;
 	font-weight: bold;
 }
 
@@ -17,7 +17,17 @@
 
 .navLinks {
 	display: flex;
-	gap: 30px;
+	gap: 2vw;
+}
+
+.navLinks a {
+	color: black;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+
+.navLinks a:hover {
+	color: white;
 }
 
 #navLinksRight {
@@ -25,7 +35,7 @@
 }
 
 .navLinks a {
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: normal;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -37,15 +47,15 @@
 
 .authContainer {
 	display: flex;
-	gap: 10px;
+	gap: 0.5rem;
 }
 
 .authButtons {
-	border-radius: 40px; /* Adjust the border-radius value for more or less rounding */
-	font-size: 20px;
+	border-radius: 2.5rem; /* Adjust the border-radius value for more or less rounding */
+	font-size: 1.2rem;
 	color: #5c645f;
-	height: 50px;
-	width: 120px;
+	height: 3.125rem;
+	width: 7.5rem;
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -61,20 +71,60 @@
 	font-weight: 570;
 }
 
-@media (min-width: 640px) {
+#navbarHamburger {
+	float: right;
+	position: relative;
+}
+
+#navbarHamburger ul {
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+	position: absolute;
+	text-align: right;
+	list-style-type: none;
+	right: -50px;
+	opacity: 0;
+	top: 32px;
+	margin: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#navbarHamburger ul.is-active {
+	opacity: 1;
+	right: 0px;
+}
+
+#navbarHamburger ul a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+
+#navbarHamburger ul a:hover {
+	color: white;
+}
+
+@media (min-width: 0px) {
 	.navLinks {
 		display: none;
-	}
-}
-@media (min-width: 768px) {
-	.navLinks {
-		display: flex;
 	}
 	.authContainer {
 		display: none;
 	}
+	#navbar {
+		align-items: center;
+	}
+}
+
+@media (min-width: 768px) {
 }
 @media (min-width: 1024px) {
+	.navLinks {
+		display: flex;
+	}
 	#navbarHamburger {
 		display: none;
 	}
