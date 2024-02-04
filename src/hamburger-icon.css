@@ -9,7 +9,7 @@
 	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, filter;
-	transition-duration: 0.15s;
+	transition-duration: 1s;
 	transition-timing-function: linear;
 	font: inherit;
 	color: inherit;
@@ -29,7 +29,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-	background-color: #000;
+	background-color: white;
 }
 
 .hamburger-box {
