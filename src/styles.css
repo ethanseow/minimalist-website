@@ -4,8 +4,7 @@
 html {
 	background-color: #c8ceca;
 	font-family: "Poppins", sans-serif;
-	padding-left: 100px;
-	padding-right: 100px;
+	font-size: 16px;
 }
 
 button {

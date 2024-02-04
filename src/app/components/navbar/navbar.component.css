@@ -3,6 +3,9 @@
 	align-items: baseline;
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
+
+	margin-left: 6.25rem;
+	margin-right: 6.25rem;
 }
 
 #navbar > :first-child {
@@ -116,6 +119,7 @@
 	}
 	#navbar {
 		align-items: center;
+		margin-bottom: 2.25rem;
 	}
 }
 
@@ -130,5 +134,9 @@
 	}
 	.authContainer {
 		display: flex;
+	}
+	#navbar {
+		align-items: baseline;
+		margin-bottom: 3.125rem;
 	}
 }

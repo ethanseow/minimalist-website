@@ -1,0 +1,77 @@
+#hero-img {
+	width: 33%;
+	object-fit: contain;
+	margin-right: 3.75rem;
+}
+
+#hero-section {
+	display: flex;
+	flex-direction: row;
+	margin-left: 3.125rem;
+	margin-right: 3.125rem;
+	gap: 1.875rem;
+}
+
+.heroContent {
+	width: 70%;
+}
+
+.heroContent h1 {
+	font-family: "Playfair Display";
+	font-size: 56px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.heroContent p {
+	width: 70%;
+	font-size: 16px;
+	margin-bottom: 1.875rem;
+}
+
+.heroContent button {
+	display: flex;
+	background-color: transparent;
+	align-items: baseline; /* Center the content vertically */
+	padding-top: 0.9375rem;
+	padding-bottom: 0.9375rem;
+	border-radius: 1.875rem;
+	border: 2px solid #717c75;
+}
+
+.heroContent button span {
+	color: #313733;
+	font-size: 20px;
+	margin-left: 2.1875rem;
+	margin-right: 2.1875rem;
+	font-weight: 550;
+}
+
+#arrow-icon {
+	width: 1.5625rem;
+	margin-right: 0.3125rem;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+@media (min-width: 0px) {
+	#hero-img {
+		display: none;
+	}
+	#hero-section {
+		margin-left: 6.25rem;
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+	#hero-img {
+		visibility: visible;
+		display: initial;
+	}
+	.heroContent {
+		width: 60%;
+	}
+}
