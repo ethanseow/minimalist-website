@@ -1,15 +1,16 @@
 #hero-img {
-	width: 33%;
-	object-fit: fill;
+	width: 40%;
+	object-fit: cover;
 	object-position: top;
 	margin-right: 3.75rem;
+	display: none;
 }
 
 #hero-section {
 	display: flex;
 	flex-direction: row;
-	margin-left: 3.125rem;
-	margin-right: 3.125rem;
+	margin-inline: 10vw;
+	margin-bottom: 1.5rem;
 	gap: 1.875rem;
 }
 
@@ -18,7 +19,7 @@
 
 .heroContent h1 {
 	font-family: "Playfair Display";
-	font-size: 56px;
+	font-size: 3rem;
 	font-weight: bold;
 	margin: 0;
 }
@@ -54,19 +55,10 @@
 	margin-bottom: auto;
 }
 
-@media (min-width: 0px) {
-	#hero-img {
-		display: none;
-	}
-	#hero-section {
-		margin-left: 6.25rem;
-	}
-}
-
-@media (min-width: 768px) {
-}
-
 @media (min-width: 1024px) {
+	#hero-section {
+		margin-bottom: 0rem;
+	}
 	#hero-img {
 		visibility: visible;
 		display: initial;

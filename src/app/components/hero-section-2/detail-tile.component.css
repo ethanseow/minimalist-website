@@ -1,0 +1,35 @@
+.detail-tile {
+	width: 60%;
+	text-align: left;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+}
+
+.header img {
+	width: 50px;
+}
+
+.header h1 {
+	font-size: 30px;
+	margin: 0;
+}
+
+.detail-tile a {
+	color: #4f725d;
+	text-decoration: underline;
+}
+
+@media (min-width: 0px) {
+	.detail-tile {
+		width: 100%;
+	}
+}
