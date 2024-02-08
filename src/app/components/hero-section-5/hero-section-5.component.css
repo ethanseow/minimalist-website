@@ -1,0 +1,43 @@
+#top-level {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100vw;
+	height: 200vw;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50%;
+	background-color: #fefefe;
+}
+
+.details > div {
+	font-family: "Playfair Display";
+	width: 70%;
+	height: max-content;
+}
+
+.details-img {
+	object-fit: contain;
+	height: 50%;
+}
+
+@media (min-width: 768px) {
+	#top-level {
+		flex-direction: row;
+		width: 100%;
+		height: initial;
+	}
+
+	.details {
+		height: initial;
+		width: 50%;
+		background-color: initial;
+	}
+	.details-img {
+		width: 50%;
+		height: initial;
+	}
+}

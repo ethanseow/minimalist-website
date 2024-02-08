@@ -1,5 +1,45 @@
 #top-level {
 	background-color: #f3f3f3;
-	width: 80%;
+	width: 100%;
+	box-sizing: border-box;
 	margin-right: auto;
+	padding-top: 1.875rem;
+	padding-bottom: 1.875rem;
+	padding-inline: 1rem;
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+h1 {
+	font-family: "Playfair Display";
+}
+
+.right-img {
+	display: none;
+}
+
+.left-img {
+	display: none;
+}
+
+.details-header {
+	margin-bottom: 2rem;
+}
+
+.inner-div-img {
+	width: 80%;
+	height: 100%;
+}
+
+@media (min-width: 768px) {
+	.right-img {
+		width: 40%;
+		display: initial;
+	}
+
+	.right-img img {
+		object-fit: cover;
+		object-position: right;
+	}
 }

@@ -1,0 +1,28 @@
+#top-level {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.icons {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	padding: 5px;
+	background-color: #f3f3f3;
+}
+
+.footer-info {
+	max-width: 300px;
+	flex-grow: 1;
+}
+.footer-info > div {
+	display: flex;
+	gap: 20px;
+}
+
+@media (min-width: 768px) {
+	#top-level {
+		flex-direction: row;
+	}
+}
